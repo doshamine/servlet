@@ -1,0 +1,30 @@
+@baseUrl = http://localhost:8080/servlet_war_exploded/api/posts
+
+POST {{baseUrl}}
+Content-Type: application/json
+
+{
+  "content": "One"
+}
+
+###
+
+POST {{baseUrl}}
+Content-Type: application/json
+
+{
+  "id": 3,
+  "content": "Two"
+}
+
+###
+
+GET {{baseUrl}}
+
+###
+
+GET {{baseUrl}}/1
+
+###
+
+DELETE {{baseUrl}}/2
